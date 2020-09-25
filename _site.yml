@@ -14,7 +14,7 @@ creative_commons: CC BY
 base_url: https://github.com/hossainlab/datajournal/
 favicon: images/logo.png
 google_analytics: "UA-77306155-2"
-
+output_dir: "docs"
 navbar:
   logo:
     #image: images/logo.png
