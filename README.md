@@ -1,5 +1,5 @@
 # Data Journal
-[](../images/Data-Journal-Welcome-.png)
+[](./images/datajournal.png)
 
 
 ## Python
