@@ -45,8 +45,17 @@ navbar:
       href: gallery.html
     - text: "Contributors"
       href: contributors.html
+    - icon: fab fa-github
+      href: https://hossainlab.github.io/
+    - icon: fab fa-linkedin
+      href: https://hossainlab.github.io/
+
     
-output: distill::distill_article
+    
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 2
 ---
 
   
