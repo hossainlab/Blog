@@ -9,9 +9,13 @@ collections:
     disqus: reproducible-finance-with-r
     share: [twitter, linkedin]
     subscribe: _subscribe.html  
+    categories: false
+    categories_metadata: false
 
 creative_commons: CC BY
-base_url: https://github.com/hossainlab/datajournal/
+base_url: https://github.com/hossainlab/hossainlab.github.io/
+repository_url: https://github.com/hossainlab/hossainlab.github.io
+
 favicon: images/logo.png
 google_analytics: "UA-77306155-2"
 output_dir: "docs"
@@ -44,7 +48,7 @@ navbar:
     - text: "R Programming"
       menu:
         - text: "Introduction to R"
-          href: quick_python.html
+          href: r-intro.html
         - text: "Data Management with R"
           href: data_management.html 
         - text: "Data Visualization with R"
@@ -55,4 +59,6 @@ navbar:
 
 output:
   distill::distill_article:
+    highlight: rstudio
+    toc: true
 ---
