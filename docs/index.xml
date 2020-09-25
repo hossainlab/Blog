@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Data Journal</title>
+    <link>https://hossainlab.github.io/</link>
+    <atom:link href="https://hossainlab.github.io/index.xml" rel="self" type="application/rss+xml"/>
+    <description>Exploring reproducible finance with the R statistical computing environment.
+</description>
+    <image>
+      <title>Data Journal</title>
+      <url>https://hossainlab.github.io/images/favicon.png</url>
+      <link>https://hossainlab.github.io/</link>
+    </image>
+    <generator>Distill</generator>
+    <lastBuildDate>Sat, 26 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Introduction to R</title>
+      <dc:creator>Jubayer Hossain</dc:creator>
+      <link>https://hossainlab.github.io/posts/2020-09-26-introduction-to-r</link>
+      <description>In this article, you will learn about R programming and it's application in the field of statistics, data analytics, data science and research.</description>
+      <category>R Basics</category>
+      <guid>https://hossainlab.github.io/posts/2020-09-26-introduction-to-r</guid>
+      <pubDate>Sat, 26 Sep 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://hossainlab.github.io/posts/2020-09-26-introduction-to-r/Rplot.png" medium="image" type="image/png" width="596" height="480"/>
+    </item>
+    <item>
+      <title>Variables and Reserved Words in R</title>
+      <dc:creator>Jubayer Hossain</dc:creator>
+      <link>https://hossainlab.github.io/posts/2020-09-26-variables-and-reserved-words-in-r</link>
+      <description>In this article, you will learn about what are variables?, how to create them? the naming convention of varibales in R programming. I'll also mention some reserved keywords which can not be a variable name.</description>
+      <category>R Basics</category>
+      <guid>https://hossainlab.github.io/posts/2020-09-26-variables-and-reserved-words-in-r</guid>
+      <pubDate>Fri, 25 Sep 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://hossainlab.github.io/posts/2020-09-26-variables-and-reserved-words-in-r/inset_plot.png" medium="image" type="image/png" width="480" height="480"/>
+    </item>
+  </channel>
+</rss>

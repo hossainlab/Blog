@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "path": "posts/2020-09-26-introduction-to-r/",
+    "title": "Introduction to R",
+    "description": "In this article, you will learn about R programming and it's application in the field of statistics, data analytics, data science and research.",
+    "author": [
+      {
+        "name": "Jubayer Hossain",
+        "url": "https://www.linkedin.com/in/jubayer28/"
+      }
+    ],
+    "date": "2020-09-26",
+    "categories": [
+      "R Basics"
+    ],
+    "preview": "posts/2020-09-26-introduction-to-r/Rplot.png",
+    "last_modified": "2020-09-26T02:14:57+06:00",
+    "input_file": {},
+    "preview_width": 596,
+    "preview_height": 480
+  },
+  {
+    "path": "posts/2020-09-26-variables-and-reserved-words-in-r/",
+    "title": "Variables and Reserved Words in R",
+    "description": "In this article, you will learn about what are variables?, how to create them? the naming convention of varibales in R programming. I'll also mention some reserved keywords which can not be a variable name.",
+    "author": [
+      {
+        "name": "Jubayer Hossain",
+        "url": "https://www.linkedin.com/in/jubayer28/"
+      }
+    ],
+    "date": "2020-09-26",
+    "categories": [
+      "R Basics"
+    ],
+    "preview": "posts/2020-09-26-variables-and-reserved-words-in-r/inset_plot.png",
+    "last_modified": "2020-09-26T02:26:08+06:00",
+    "input_file": "variables-and-reserved-words-in-r.utf8.md",
+    "preview_width": 480,
+    "preview_height": 480
+  }
+]

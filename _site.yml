@@ -2,38 +2,29 @@
 name: "Data Journal"
 title: "Data Journal"
 description: |
-  Exploring the real world data using Python and R 
-  
+  Exploring reproducible finance with the R statistical computing environment.
 collections:
   posts:
     disqus: reproducible-finance-with-r
     share: [twitter, linkedin]
-    subscribe: _subscribe.html  
-    categories: false
+    subscribe: _subscribe.html
+    categories: true
     categories_metadata: false
 
+search: true 
 creative_commons: CC BY
-base_url: https://github.com/hossainlab/hossainlab.github.io/
+base_url: https://hossainlab.github.io/
 repository_url: https://github.com/hossainlab/hossainlab.github.io
-
-favicon: images/logo.png
-google_analytics: "UA-77306155-2"
 output_dir: "docs"
+favicon: images/favicon.png
+google_analytics: "UA-77306155-2"
 navbar:
-  logo:
-    #image: images/logo.png
-    # href: https://www.hossainlab.github.io
+  #logo: images/logo.png
   right:
+    - text: "Home"
+      href: index.html
     - text: "About"
       href: about.html
-   
-    - text: "Bioinformatics"
-      menu:
-        - text: "Python for Bioinformatics"
-          href: https://hossainlab.github.io/PY4B/
-        - text: "Statiscal Analysis in Bioinformatics with R"
-          href: quick_python.html
-          
     - text: "Python"
       menu:
         - text: "Introduction to Python"
@@ -44,21 +35,19 @@ navbar:
           href: https://hossainlab.github.io/pandas/
         - text: "Data Visualization with Python"
           href: https://hossainlab.github.io/dataviz/
-          
-    - text: "R Programming"
+    - text: "Bioinformatics"
       menu:
-        - text: "Introduction to R"
-          href: r-intro.html
-        - text: "Data Management with R"
-          href: data_management.html 
-        - text: "Data Visualization with R"
-          href: metadata.html
-          
-    - icon: fab fa-github
-      href: https://github.com/hossainlab/datajournal
-
-output:
-  distill::distill_article:
-    highlight: rstudio
-    toc: true
+        - text: "Python for Bioinformatics"
+          href: https://hossainlab.github.io/PY4B/
+        - text: "Statiscal Analysis in Bioinformatics with R"
+          href: quick_python.html
+    - text: "Gallery"
+      href: gallery.html
+    - text: "Contributors"
+      href: contributors.html
+    
+output: distill::distill_article
 ---
+
+  
+

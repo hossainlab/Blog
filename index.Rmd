@@ -1,15 +1,5 @@
 ---
-title: "Welcome!"
+title: "Data Journal"
 site: distill::distill_website
+listing: posts
 ---
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
-Hey there! This is Jubayer Hossain
-
-I am a student of Microbiology at [Jagannath University](https://www.jnu.ac.bd/) and Health Data Science Enthusiastic. My research interests are health data science, bioinformatics, microscopic image analysis, and machine learning. Recently, we have formed an organization named Health Data Research Organization for creating research opportunities in health data science and genomic data science in Bangladesh. 
-
-
-
-
-![](./images/inset_plot.png)

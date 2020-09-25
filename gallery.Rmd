@@ -1,0 +1,7 @@
+---
+title: "Gallery of featured posts"
+listing:
+  posts:
+    - 2020-09-26-introduction-to-r
+    
+---
