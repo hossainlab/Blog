@@ -5,7 +5,7 @@ description: |
   Exploring reproducible finance with the R statistical computing environment.
 collections:
   posts:
-    disqus: reproducible-finance-with-r
+    disqus: https-hossainlab-github-io
     share: [twitter, linkedin]
     subscribe: _subscribe.html
     categories: true
