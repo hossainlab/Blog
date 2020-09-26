@@ -14,6 +14,16 @@
     <generator>Distill</generator>
     <lastBuildDate>Sat, 26 Sep 2020 00:00:00 +0000</lastBuildDate>
     <item>
+      <title>Data Visualization with R &amp; ggplot2 - Introduction</title>
+      <dc:creator>Jubayer Hossain</dc:creator>
+      <link>https://hossainlab.github.io/posts/2020-09-26-data-visualization-with-r-ggplot2-introduction</link>
+      <description>Data visualization is an essential skill of any data analysts or researchers. Simply, "A picture is worth a thousand words". In this article, I'll show you the basic principles of data visualization and why it is important?</description>
+      <category>Data Visualization</category>
+      <guid>https://hossainlab.github.io/posts/2020-09-26-data-visualization-with-r-ggplot2-introduction</guid>
+      <pubDate>Sat, 26 Sep 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://hossainlab.github.io/posts/2020-09-26-data-visualization-with-r-ggplot2-introduction/ggplot2.png" medium="image" type="image/png" width="240" height="278"/>
+    </item>
+    <item>
       <title>R for Health Data Analysis - An Introduction</title>
       <dc:creator>Jubayer Hossain</dc:creator>
       <link>https://hossainlab.github.io/posts/2020-09-26-introduction-to-r</link>
