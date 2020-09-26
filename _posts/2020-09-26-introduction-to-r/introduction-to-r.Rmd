@@ -1,13 +1,14 @@
 ---
-title: "Introduction to R"
+title: "R for Health Data Analysis: An Introduction"
 description: |
-  In this article, you will learn about R programming and it's application in the field of statistics, data analytics, data science and research.
+  In this article, you will learn about R programming and it's application in the field of statistics, data analytics, data science, genomic data science and bioinformatics research.
   
-preview: Rplot.png
+#preview: Rplot.png
 author:
   - name: Jubayer Hossain
     url: https://www.linkedin.com/in/jubayer28/
     affiliation_url: https://www.jhossain.me
+    bibliography: biblio.bib
 
 date: 09-26-2020
 categories:
@@ -21,8 +22,23 @@ draft: false
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = TRUE, comment = NA, message = FALSE, warning = FALSE)
 ```
+
+```{r fig.cap="Source: https://unsplash.com/photos/hpjSkU2UYSU", out.extra="class=external", fig.align='center', fig.height= 3, fig.width=8,  echo=FALSE}
+knitr::include_graphics("data_analysis.jpg")
+```
+
+## Steps in Data Research
+* Planning / Study Design
+* Data Collection
+* Data Preparation
+* Data Analysis
+* Interpretation
+* Report Writing / Presentation
+
+
+
 
 ## What is R?
 R is a programming language and free software environment for statistical computing and
@@ -54,17 +70,19 @@ Zealand, and is developed by the R Development Core Team.
 - Statistical Computing
 - Machine Learning
 
-## Important Packages 
+## R Packages for Data Analysis 
 - [dplyr](https://dplyr.tidyverse.org/) -- for data management 
 - [ggplot2](https://ggplot2.tidyverse.org/) -- for static data visualization
 - [Plotly](https://plotly.com/r/) -- for interactive data visualization
 - [tidyverse](https://www.tidyverse.org/) -- combination of `dplyr`, `ggplot2` 
+- [caret](https://topepo.github.io/caret/) -- for machine learning
+
+## R Packages for Bioinformatics Research 
 - [Bioconductor](https://www.bioconductor.org/) -- for genomic data analysis
 - [seqinr](https://cran.r-project.org/web/packages/seqinr/index.html) -- DNA or Protein sequence analysis 
 - [MutatioanlPattern](https://bioconductor.org/packages/release/bioc/html/MutationalPatterns.html) -- mutational signature analysis 
-- [caret](https://topepo.github.io/caret/) -- for machine learning
 
-## References
+## Books for Learning R Programming 
 * [R for Data Science by Roger D.Peng ](https://bookdown.org/rdpeng/rprogdatascience/)
 * [Introduction to Data Science by Rafael Irizarry](https://rafalab.github.io/dsbook/)
 * [Data Analysis for the Life Sciences by Rafael Irizarry](https://rafalab.github.io/pagesharvardx.html)
@@ -72,3 +90,26 @@ Zealand, and is developed by the R Development Core Team.
 * [R for Biologists](R for Biologists)
 * [R for Public Health](http://rforpublichealth.blogspot.com/)
 * [Rmarkdown](https://rmarkdown.rstudio.com/) 
+
+## Online Resources for Learning R
+* [R for Biologists](https://www.rforbiologists.org/)
+* [R for Public Health](http://rforpublichealth.blogspot.com/)
+* [R for Bioinformatics](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/) 
+* [Bioconductor for Genomic Data Science](https://kasperdanielhansen.github.io/genbioconductor/)
+* [Computational Genomics using R](https://compgenomr.github.io/book/) 
+
+## Resources for Statistics
+* [Introduction to Biostatistics by University of Florida
+](https://bolt.mph.ufl.edu/6050-6052/preliminaries/)
+* [Applied Statistics](https://online.stat.psu.edu/stat500/) 
+* [Elementary Statistics](https://online.stat.psu.edu/statprogram/stat200) 
+* [Introduction to Biostatistics by Johns Hopkins University
+](http://ocw.jhsph.edu/index.cfm/go/viewCourse/course/IntroBiostats/coursePage/index/) 
+* [Statistics for Genomic Data Science
+](http://jtleek.com/genstats_site/) 
+
+## Report Writing Tools
+* [Rmarkdown](https://rmarkdown.rstudio.com/)
+* [LaTeX](https://www.latex-project.org/) 
+
+

@@ -46,9 +46,9 @@ navbar:
     - text: "Contributors"
       href: contributors.html
     - icon: fab fa-github
-      href: https://hossainlab.github.io/
+      href: https://github.com/hossainlab/
     - icon: fab fa-linkedin
-      href: https://hossainlab.github.io/
+      href: https://www.linkedin.com/in/jubayer28/
 
     
     

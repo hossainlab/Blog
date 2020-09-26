@@ -1,8 +1,8 @@
 [
   {
     "path": "posts/2020-09-26-introduction-to-r/",
-    "title": "Introduction to R",
-    "description": "In this article, you will learn about R programming and it's application in the field of statistics, data analytics, data science and research.",
+    "title": "R for Health Data Analysis: An Introduction",
+    "description": "In this article, you will learn about R programming and it's application in the field of statistics, data analytics, data science, genomic data science and bioinformatics research.",
     "author": [
       {
         "name": "Jubayer Hossain",
@@ -13,15 +13,13 @@
     "categories": [
       "R Basics"
     ],
-    "preview": "posts/2020-09-26-introduction-to-r/Rplot.png",
-    "last_modified": "2020-09-26T02:40:48+06:00",
-    "input_file": {},
-    "preview_width": 596,
-    "preview_height": 480
+    "preview": "posts/2020-09-26-introduction-to-r/data_analysis.jpg",
+    "last_modified": "2020-09-26T16:13:55+06:00",
+    "input_file": {}
   },
   {
     "path": "posts/2020-09-26-variables-and-reserved-words-in-r/",
-    "title": "Variables and Reserved Words in R",
+    "title": "R for Health Data Analysis: Variables and Reserved Words",
     "description": "In this article, you will learn about what are variables?, how to create them? the naming convention of varibales in R programming. I'll also mention some reserved keywords which can not be a variable name.",
     "author": [
       {
@@ -34,7 +32,7 @@
       "R Basics"
     ],
     "preview": "posts/2020-09-26-variables-and-reserved-words-in-r/inset_plot.png",
-    "last_modified": "2020-09-26T02:26:08+06:00",
+    "last_modified": "2020-09-26T15:33:41+06:00",
     "input_file": {},
     "preview_width": 480,
     "preview_height": 480
