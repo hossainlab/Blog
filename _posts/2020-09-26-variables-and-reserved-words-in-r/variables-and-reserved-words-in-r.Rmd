@@ -1,8 +1,8 @@
 ---
-title: "R for Health Data Analysis: Variables and Reserved Words"
+title: "R for Health Data Analysis - Variables and Reserved Words"
 description: |
    In this article, you will learn about what are variables?, how to create them? the naming convention of varibales in R programming. I'll also mention some reserved keywords which can not be a variable name. 
-preview: inset_plot.png
+# preview: inset_plot.png
 author:
   - name: Jubayer Hossain
     url: https://www.linkedin.com/in/jubayer28/
@@ -19,6 +19,10 @@ draft: false
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, comment = NA, message = FALSE, warning = FALSE)
+```
+
+```{r fig.cap="Source: https://unsplash.com/photos/hpjSkU2UYSU", out.extra="class=external", fig.align='center', fig.height= 3, fig.width=8,  echo=FALSE}
+knitr::include_graphics("data_analysis.jpg")
 ```
 
 ## Variables(Identifiers) in R

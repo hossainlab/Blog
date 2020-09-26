@@ -1,0 +1,140 @@
+---
+title: "R for Health Data Analysis - R Objects"
+description: |
+  In this article, you will learn about 5 basic or "atomic" R classes of objects. Such as Numeric(real numbers), Integer, Complex, Character and Logical(True or False)
+
+
+  
+#preview: Rplot.png
+author:
+  - name: Jubayer Hossain
+    url: https://www.linkedin.com/in/jubayer28/
+    affiliation_url: https://www.jhossain.me
+    bibliography: biblio.bib
+
+date: 09-26-2020
+categories:
+  - R Basics
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true 
+    toc_depth: 2
+draft: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA, message = FALSE, warning = FALSE)
+```
+
+```{r fig.cap="Source: https://unsplash.com/photos/hpjSkU2UYSU", out.extra="class=external", fig.align='center', fig.height= 3, fig.width=8,  echo=FALSE}
+knitr::include_graphics("data_analysis.jpg")
+```
+
+## Objects 
+R has 5 basic or "atomic" classes of objects:
+
+* Numeric(real numbers)
+* Integer 
+* Complex 
+* Character 
+* Logical(True or False)
+
+The most basic object in R is a `vector`
+
+* A vector can only contain objects of same class
+* BUT: The one exception is a list, which is represented as a vector but can contain objects of different classes 
+* Empty vector can be created with the `vector()` function.
+
+## Numbers 
+* Numbers in R generally treated as numeric objects(i.e. double precision real numbers)
+* If you explicitly want an integer, you need to specify the `L` suffix.
+* There is also a special number `Inf` which is represents infinity; e.g. `1 / 0`
+* `Inf` can be used in ordinary calculations; e.g. `1/Inf` is `0`
+* The value `NaN` represents an undefined value("not a number"); e.g. `0/0` 
+* `NaN` can also be thought of as a missing value. 
+
+The numeric constants are 
+
+- integer(`L`)
+- double
+- complex(`i`) 
+
+```{r}
+# create an integer type constant 
+i = 5L 
+```
+```{r}
+# check type of objecr
+typeof(i)
+```
+
+```{r}
+# create a double type constant 
+d = 22
+```
+```{r}
+# check type of objecr
+typeof(d)
+```
+```{r}
+# create a complex type constant 
+c = 4i 
+```
+
+```{r}
+# check type of objecr
+typeof(c)
+```
+
+## Decimal vs Double vs Float
+The Decimal, Double, and Float variable types are different in the way that they store the values. Precision is the main difference where float is a single precision (32 bit) floating point data type, double is a double precision (64 bit) floating point data type and decimal is a 128-bit floating point data type.
+
+* Float - 32 bit (7 digits)
+* Double - 64 bit (15-16 digits)
+* Decimal - 128 bit (28-29 significant digits)
+
+```{r fig.cap="Source: https://datamentor.com/data-types", out.extra="class=external", fig.align='center', fig.height= 3, fig.width=8,  echo=FALSE}
+knitr::include_graphics("bit.png")
+```
+
+## Integer vs. Double
+The two most common numeric classes used in R are integer and double (for double precision floating point numbers). R automatically converts between these two classes when needed for mathematical purposes. As a result, it’s feasible to use R and perform analyses for years without specifying these differences.
+
+# Characters 
+
+Character constants can be represented using either single quotes (') or double quotes (") as delimiters.
+
+```{r}
+# create a character type object 
+char = "Hello"
+```
+```{r}
+# check type of object 
+typeof(char)
+```
+
+## Atributes 
+R objects can have attributes 
+
+* names, dimnames 
+* dimensions(e.g. matrices, arrays)
+* class 
+* length 
+* other user-defined attributes/metadata
+
+Attributes of an object can be accessed using the `attributes()` function.
+
+## Built-in Constants in R 
+
+```{r}
+pi # value of pi 
+LETTERS
+```
+
+```{r}
+month.name 
+```
+
+
+

@@ -19,9 +19,9 @@
  <!--/radix_placeholder_import_source-->
 
   <!--radix_placeholder_meta_tags-->
-  <title>R for Health Data Analysis - Variables and Reserved Words</title>
+  <title>R for Health Data Analysis - R Objects</title>
   
-  <meta property="description" itemprop="description" content="In this article, you will learn about what are variables?, how to create them? the naming convention of varibales in R programming. I&#39;ll also mention some reserved keywords which can not be a variable name."/>
+  <meta property="description" itemprop="description" content="In this article, you will learn about 5 basic or &quot;atomic&quot; R classes of objects. Such as Numeric(real numbers), Integer, Complex, Character and Logical(True or False)"/>
   
   
   <!--  https://schema.org/Article -->
@@ -30,26 +30,26 @@
   <meta name="article:author" content="Jubayer Hossain"/>
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="R for Health Data Analysis - Variables and Reserved Words"/>
+  <meta property="og:title" content="R for Health Data Analysis - R Objects"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="In this article, you will learn about what are variables?, how to create them? the naming convention of varibales in R programming. I&#39;ll also mention some reserved keywords which can not be a variable name."/>
+  <meta property="og:description" content="In this article, you will learn about 5 basic or &quot;atomic&quot; R classes of objects. Such as Numeric(real numbers), Integer, Complex, Character and Logical(True or False)"/>
   <meta property="og:locale" content="en_US"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="R for Health Data Analysis - Variables and Reserved Words"/>
-  <meta property="twitter:description" content="In this article, you will learn about what are variables?, how to create them? the naming convention of varibales in R programming. I&#39;ll also mention some reserved keywords which can not be a variable name."/>
+  <meta property="twitter:title" content="R for Health Data Analysis - R Objects"/>
+  <meta property="twitter:description" content="In this article, you will learn about 5 basic or &quot;atomic&quot; R classes of objects. Such as Numeric(real numbers), Integer, Complex, Character and Logical(True or False)"/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","categories","output","draft"]}},"value":[{"type":"character","attributes":{},"value":["R for Health Data Analysis - Variables and Reserved Words"]},{"type":"character","attributes":{},"value":["In this article, you will learn about what are variables?, how to create them? the naming convention of varibales in R programming. I'll also mention some reserved keywords which can not be a variable name. \n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Jubayer Hossain"]},{"type":"character","attributes":{},"value":["https://www.linkedin.com/in/jubayer28/"]},{"type":"character","attributes":{},"value":["https://www.jhossain.me"]}]}]},{"type":"character","attributes":{},"value":["09-26-2020"]},{"type":"character","attributes":{},"value":["R Basics"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"logical","attributes":{},"value":[false]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","categories","output","draft"]}},"value":[{"type":"character","attributes":{},"value":["R for Health Data Analysis - R Objects"]},{"type":"character","attributes":{},"value":["In this article, you will learn about 5 basic or \"atomic\" R classes of objects. Such as Numeric(real numbers), Integer, Complex, Character and Logical(True or False)\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation_url","bibliography"]}},"value":[{"type":"character","attributes":{},"value":["Jubayer Hossain"]},{"type":"character","attributes":{},"value":["https://www.linkedin.com/in/jubayer28/"]},{"type":"character","attributes":{},"value":["https://www.jhossain.me"]},{"type":"character","attributes":{},"value":["biblio.bib"]}]}]},{"type":"character","attributes":{},"value":["09-26-2020"]},{"type":"character","attributes":{},"value":["R Basics"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]}]}]},{"type":"logical","attributes":{},"value":[false]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["data_analysis.jpg","inset_plot.png","variables-and-reserved-words-in-r_files/bowser-1.9.3/bowser.min.js","variables-and-reserved-words-in-r_files/distill-2.2.21/template.v2.js","variables-and-reserved-words-in-r_files/jquery-1.11.3/jquery.min.js","variables-and-reserved-words-in-r_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["bit.png","data_analysis.jpg","r-objects_files/bowser-1.9.3/bowser.min.js","r-objects_files/distill-2.2.21/template.v2.js","r-objects_files/jquery-1.11.3/jquery.min.js","r-objects_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -937,10 +937,10 @@
   </script>
   
   <!--/radix_placeholder_distill-->
-  <script src="variables-and-reserved-words-in-r_files/jquery-1.11.3/jquery.min.js"></script>
-  <script src="variables-and-reserved-words-in-r_files/bowser-1.9.3/bowser.min.js"></script>
-  <script src="variables-and-reserved-words-in-r_files/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="variables-and-reserved-words-in-r_files/distill-2.2.21/template.v2.js"></script>
+  <script src="r-objects_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="r-objects_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="r-objects_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="r-objects_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
   <!--/radix_placeholder_site_in_header-->
 
@@ -952,7 +952,7 @@
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"R for Health Data Analysis - Variables and Reserved Words","description":"In this article, you will learn about what are variables?, how to create them? the naming convention of varibales in R programming. I'll also mention some reserved keywords which can not be a variable name.","authors":[{"author":"Jubayer Hossain","authorURL":"https://www.linkedin.com/in/jubayer28/","affiliation":"https://www.jhossain.me","affiliationURL":"https://www.jhossain.me"}],"publishedDate":"2020-09-26T00:00:00.000+06:00","citationText":"Hossain, 2020"}
+{"title":"R for Health Data Analysis - R Objects","description":"In this article, you will learn about 5 basic or \"atomic\" R classes of objects. Such as Numeric(real numbers), Integer, Complex, Character and Logical(True or False)","authors":[{"author":"Jubayer Hossain","authorURL":"https://www.linkedin.com/in/jubayer28/","affiliation":"https://www.jhossain.me","affiliationURL":"https://www.jhossain.me"}],"publishedDate":"2020-09-26T00:00:00.000+06:00","citationText":"Hossain, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -962,8 +962,8 @@
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>R for Health Data Analysis - Variables and Reserved Words</h1>
-<p>In this article, you will learn about what are variables?, how to create them? the naming convention of varibales in R programming. I’ll also mention some reserved keywords which can not be a variable name.</p>
+<h1>R for Health Data Analysis - R Objects</h1>
+<p>In this article, you will learn about 5 basic or “atomic” R classes of objects. Such as Numeric(real numbers), Integer, Complex, Character and Logical(True or False)</p>
 </div>
 
 <div class="d-byline">
@@ -973,6 +973,20 @@
 </div>
 
 <div class="d-article">
+<h3 class="d-toc-header">Table of Contents</h3>
+<nav class="d-toc" id="TOC">
+<ul>
+<li><a href="#objects">Objects</a></li>
+<li><a href="#numbers">Numbers</a></li>
+<li><a href="#decimal-vs-double-vs-float">Decimal vs Double vs Float</a></li>
+<li><a href="#integer-vs.-double">Integer vs. Double</a></li>
+<li><a href="#characters">Characters</a><ul>
+<li><a href="#atributes">Atributes</a></li>
+<li><a href="#built-in-constants-in-r">Built-in Constants in R</a></li>
+</ul></li>
+</ul>
+</nav>
+<hr class="d-toc-separator"/>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-1"></span>
 <img src="data_analysis.jpg" alt="Source: https://unsplash.com/photos/hpjSkU2UYSU" width="1213" class=external />
@@ -981,88 +995,133 @@ Figure 1: Source: <a href="https://unsplash.com/photos/hpjSkU2UYSU" class="uri">
 </p>
 </div>
 </div>
-<h2 id="variablesidentifiers-in-r">Variables(Identifiers) in R</h2>
-<p>Variables are used to <strong>store data</strong>, whose value can be changed according to our need. Unique name given to variable (function and objects as well) is <strong>identifier</strong></p>
-<h2 id="rules-for-writing-identifiers-in-r">Rules for writing Identifiers in R</h2>
+<h2 id="objects">Objects</h2>
+<p>R has 5 basic or “atomic” classes of objects:</p>
 <ul>
-<li>Identifiers can be a combination of letters, digits, period (.) and underscore (_).</li>
-<li>It must start with a letter or a period. If it starts with a period, it cannot be followed by a digit.</li>
-<li>Reserved words in R cannot be used as identifiers.</li>
+<li>Numeric(real numbers)</li>
+<li>Integer</li>
+<li>Complex</li>
+<li>Character</li>
+<li>Logical(True or False)</li>
 </ul>
-<p>Basically, there are 5 naming conventions</p>
+<p>The most basic object in R is a <code>vector</code></p>
 <ul>
-<li>alllowercase: e.g. <code>myname</code></li>
-<li>period.separated: e.g. <code>new.name</code></li>
-<li>underscore_separated: e.g. <code>my_name</code></li>
-<li>lowerCamelCase: e.g. <code>myName</code></li>
-<li>UpperCamelCase: e.g. <code>MyName</code></li>
+<li>A vector can only contain objects of same class</li>
+<li>BUT: The one exception is a list, which is represented as a vector but can contain objects of different classes</li>
+<li>Empty vector can be created with the <code>vector()</code> function.</li>
 </ul>
-<h2 id="creating-variables">Creating Variables</h2>
+<h2 id="numbers">Numbers</h2>
 <ul>
-<li>Using equal(<code>=</code>) operator</li>
+<li>Numbers in R generally treated as numeric objects(i.e. double precision real numbers)</li>
+<li>If you explicitly want an integer, you need to specify the <code>L</code> suffix.</li>
+<li>There is also a special number <code>Inf</code> which is represents infinity; e.g. <code>1 / 0</code></li>
+<li><code>Inf</code> can be used in ordinary calculations; e.g. <code>1/Inf</code> is <code>0</code></li>
+<li>The value <code>NaN</code> represents an undefined value(“not a number”); e.g. <code>0/0</code></li>
+<li><code>NaN</code> can also be thought of as a missing value.</li>
+</ul>
+<p>The numeric constants are</p>
+<ul>
+<li>integer(<code>L</code>)</li>
+<li>double</li>
+<li>complex(<code>i</code>)</li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
 <pre class="r"><code>
-x = 10 </code></pre>
+# create an integer type constant 
+i = 5L </code></pre>
 </div>
-<ul>
-<li>Using leftward(<code>&lt;-</code>) operator</li>
-</ul>
 <div class="layout-chunk" data-layout="l-body">
 <pre class="r"><code>
-y &lt;- 15  </code></pre>
-</div>
-<ul>
-<li>Using rightward(<code>-&gt;</code>) operator</li>
-</ul>
-<div class="layout-chunk" data-layout="l-body">
-<pre class="r"><code>
-z &lt;- 20 </code></pre>
-</div>
-<h2 id="printing-variables">Printing Variables</h2>
-<p>The values of the variables can be printed using <code>print()</code> or <code>cat()</code> function. The <code>cat()</code> function combines multiple items into a continuous print output.</p>
-<div class="layout-chunk" data-layout="l-body">
-<pre class="r"><code>
-x = 10 
-print(x)</code></pre>
+# check type of objecr
+typeof(i)</code></pre>
 <pre><code>
-[1] 10</code></pre>
+[1] &quot;integer&quot;</code></pre>
 </div>
 <div class="layout-chunk" data-layout="l-body">
 <pre class="r"><code>
-y &lt;- 15  
-cat(y)</code></pre>
-<pre><code>
-15</code></pre>
+# create a double type constant 
+d = 22</code></pre>
 </div>
 <div class="layout-chunk" data-layout="l-body">
 <pre class="r"><code>
-z &lt;- 20  
-z</code></pre>
+# check type of objecr
+typeof(d)</code></pre>
 <pre><code>
-[1] 20</code></pre>
-</div>
-<h2 id="basic-commands">Basic Commands</h2>
-<p>Listing variables in workspace using <code>ls()</code> and <code>objects()</code></p>
-<div class="layout-chunk" data-layout="l-body">
-<pre class="r"><code>
-ls() </code></pre>
-<pre><code>
-[1] &quot;x&quot; &quot;y&quot; &quot;z&quot;</code></pre>
+[1] &quot;double&quot;</code></pre>
 </div>
 <div class="layout-chunk" data-layout="l-body">
 <pre class="r"><code>
-objects()</code></pre>
-<pre><code>
-[1] &quot;x&quot; &quot;y&quot; &quot;z&quot;</code></pre>
+# create a complex type constant 
+c = 4i </code></pre>
 </div>
-<h2 id="reserved-words-in-r">Reserved Words in R</h2>
-<p>Don’t use any reserved keyword as variable name. List all of reserved words in R by using (<code>?Reserved</code>).</p>
-<p>The reserved words in R’s parser are</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# check type of objecr
+typeof(c)</code></pre>
+<pre><code>
+[1] &quot;complex&quot;</code></pre>
+</div>
+<h2 id="decimal-vs-double-vs-float">Decimal vs Double vs Float</h2>
+<p>The Decimal, Double, and Float variable types are different in the way that they store the values. Precision is the main difference where float is a single precision (32 bit) floating point data type, double is a double precision (64 bit) floating point data type and decimal is a 128-bit floating point data type.</p>
 <ul>
-<li><code>if</code> <code>else</code> <code>repeat</code> <code>while</code> <code>function</code> <code>for</code> <code>in</code> <code>next</code> <code>break</code></li>
-<li><code>TRUE</code> <code>FALSE</code> <code>NULL</code> <code>Inf</code> <code>NaN</code> <code>NA</code> <code>NA_integer_ NA_real_ NA_complex_ NA_character_</code></li>
+<li>Float - 32 bit (7 digits)</li>
+<li>Double - 64 bit (15-16 digits)</li>
+<li>Decimal - 128 bit (28-29 significant digits)</li>
 </ul>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-8"></span>
+<img src="bit.png" alt="Source: https://datamentor.com/data-types" width="600" class=external />
+<p class="caption">
+Figure 2: Source: <a href="https://datamentor.com/data-types" class="uri">https://datamentor.com/data-types</a>
+</p>
+</div>
+</div>
+<h2 id="integer-vs.-double">Integer vs. Double</h2>
+<p>The two most common numeric classes used in R are integer and double (for double precision floating point numbers). R automatically converts between these two classes when needed for mathematical purposes. As a result, it’s feasible to use R and perform analyses for years without specifying these differences.</p>
+<h1 id="characters">Characters</h1>
+<p>Character constants can be represented using either single quotes (’) or double quotes (") as delimiters.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# create a character type object 
+char = &quot;Hello&quot;</code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# check type of object 
+typeof(char)</code></pre>
+<pre><code>
+[1] &quot;character&quot;</code></pre>
+</div>
+<h2 id="atributes">Atributes</h2>
+<p>R objects can have attributes</p>
+<ul>
+<li>names, dimnames</li>
+<li>dimensions(e.g. matrices, arrays)</li>
+<li>class</li>
+<li>length</li>
+<li>other user-defined attributes/metadata</li>
+</ul>
+<p>Attributes of an object can be accessed using the <code>attributes()</code> function.</p>
+<h2 id="built-in-constants-in-r">Built-in Constants in R</h2>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+pi # value of pi </code></pre>
+<pre><code>
+[1] 3.141593</code></pre>
+<pre class="r"><code>
+LETTERS</code></pre>
+<pre><code>
+ [1] &quot;A&quot; &quot;B&quot; &quot;C&quot; &quot;D&quot; &quot;E&quot; &quot;F&quot; &quot;G&quot; &quot;H&quot; &quot;I&quot; &quot;J&quot; &quot;K&quot; &quot;L&quot; &quot;M&quot; &quot;N&quot; &quot;O&quot; &quot;P&quot;
+[17] &quot;Q&quot; &quot;R&quot; &quot;S&quot; &quot;T&quot; &quot;U&quot; &quot;V&quot; &quot;W&quot; &quot;X&quot; &quot;Y&quot; &quot;Z&quot;</code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+month.name </code></pre>
+<pre><code>
+ [1] &quot;January&quot;   &quot;February&quot;  &quot;March&quot;     &quot;April&quot;     &quot;May&quot;      
+ [6] &quot;June&quot;      &quot;July&quot;      &quot;August&quot;    &quot;September&quot; &quot;October&quot;  
+[11] &quot;November&quot;  &quot;December&quot; </code></pre>
+</div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

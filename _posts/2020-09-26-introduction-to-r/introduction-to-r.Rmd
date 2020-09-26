@@ -1,5 +1,5 @@
 ---
-title: "R for Health Data Analysis: An Introduction"
+title: "R for Health Data Analysis - An Introduction"
 description: |
   In this article, you will learn about R programming and it's application in the field of statistics, data analytics, data science, genomic data science and bioinformatics research.
   
@@ -36,8 +36,6 @@ knitr::include_graphics("data_analysis.jpg")
 * Data Analysis
 * Interpretation
 * Report Writing / Presentation
-
-
 
 
 ## What is R?

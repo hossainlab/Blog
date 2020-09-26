@@ -14,7 +14,7 @@
     <generator>Distill</generator>
     <lastBuildDate>Sat, 26 Sep 2020 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>R for Health Data Analysis: An Introduction</title>
+      <title>R for Health Data Analysis - An Introduction</title>
       <dc:creator>Jubayer Hossain</dc:creator>
       <link>https://hossainlab.github.io/posts/2020-09-26-introduction-to-r</link>
       <description>In this article, you will learn about R programming and it's application in the field of statistics, data analytics, data science, genomic data science and bioinformatics research.</description>
@@ -24,14 +24,24 @@
       <media:content url="https://hossainlab.github.io/posts/2020-09-26-introduction-to-r/data_analysis.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
-      <title>R for Health Data Analysis: Variables and Reserved Words</title>
+      <title>R for Health Data Analysis - R Objects</title>
+      <dc:creator>Jubayer Hossain</dc:creator>
+      <link>https://hossainlab.github.io/posts/2020-09-26-r-objects</link>
+      <description>In this article, you will learn about 5 basic or "atomic" R classes of objects. Such as Numeric(real numbers), Integer, Complex, Character and Logical(True or False)</description>
+      <category>R Basics</category>
+      <guid>https://hossainlab.github.io/posts/2020-09-26-r-objects</guid>
+      <pubDate>Sat, 26 Sep 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://hossainlab.github.io/posts/2020-09-26-r-objects/data_analysis.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>R for Health Data Analysis - Variables and Reserved Words</title>
       <dc:creator>Jubayer Hossain</dc:creator>
       <link>https://hossainlab.github.io/posts/2020-09-26-variables-and-reserved-words-in-r</link>
       <description>In this article, you will learn about what are variables?, how to create them? the naming convention of varibales in R programming. I'll also mention some reserved keywords which can not be a variable name.</description>
       <category>R Basics</category>
       <guid>https://hossainlab.github.io/posts/2020-09-26-variables-and-reserved-words-in-r</guid>
       <pubDate>Sat, 26 Sep 2020 00:00:00 +0000</pubDate>
-      <media:content url="https://hossainlab.github.io/posts/2020-09-26-variables-and-reserved-words-in-r/inset_plot.png" medium="image" type="image/png" width="480" height="480"/>
+      <media:content url="https://hossainlab.github.io/posts/2020-09-26-variables-and-reserved-words-in-r/data_analysis.jpg" medium="image" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
