@@ -194,5 +194,32 @@ ggplot(titanic, aes(x=Age, fill=Survived)) +
        title = "Titanic Survival Rates by Age")
 ```
 
+```{r, boxplot}
+ggplot(titanic, aes(x=Survived, y=Age)) +
+  geom_boxplot() + 
+  labs(y="Age", 
+       x="Survived", 
+       title = "Titanic Survival Rates by Age")
+```
+
+## Density Plot 
+```{r, density}
+ggplot(titanic, aes(x=Age, fill=Survived)) +
+  geom_density(alpha=0.5) + 
+  facet_wrap(Sex ~ Pclass) +
+  labs(y="Age", 
+       x="Survived", 
+       title = "Titanic Survival Rates by Age, Pclass and Sex")
+```
+
+```{r, histogram-facet}
+ggplot(titanic, aes(x=Age, fill=Survived)) +
+ geom_histogram(binwidth = 5) + 
+  facet_wrap(Sex ~ Pclass) +
+  labs(y="Age", 
+       x="Survived", 
+       title = "Titanic Survival Rates by Age, Pclass and Sex")
+```
+
 
 
