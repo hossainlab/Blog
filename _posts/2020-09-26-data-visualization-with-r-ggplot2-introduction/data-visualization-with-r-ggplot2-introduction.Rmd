@@ -222,4 +222,65 @@ ggplot(titanic, aes(x=Age, fill=Survived)) +
 ```
 
 
+## Save Figure: Different file formats
+```{r, png}
+# png 
+png("titanic_survival.png")
+ggplot(titanic, aes(x=Age, fill=Survived)) +
+ geom_histogram(binwidth = 5) + 
+  facet_wrap(Sex ~ Pclass) +
+  labs(y="Age", 
+       x="Survived", 
+       title = "Titanic Survival Rates by Age, Pclass and Sex")
+dev.off()
+```
+
+```{r, pdf}
+#pdf 
+pdf("titanic_survival.pdf")
+ggplot(titanic, aes(x=Age, fill=Survived)) +
+ geom_histogram(binwidth = 5) + 
+  facet_wrap(Sex ~ Pclass) +
+  labs(y="Age", 
+       x="Survived", 
+       title = "Titanic Survival Rates by Age, Pclass and Sex")
+dev.off()
+```
+```{r, tiff}
+#tiff 
+tiff("titanic_survival.tiff")
+ggplot(titanic, aes(x=Age, fill=Survived)) +
+ geom_histogram(binwidth = 5) + 
+  facet_wrap(Sex ~ Pclass) +
+  labs(y="Age", 
+       x="Survived", 
+       title = "Titanic Survival Rates by Age, Pclass and Sex")
+dev.off()
+```
+
+```{r, jpeg}
+#jpeg 
+jpeg("titanic_survival.jpeg")
+ggplot(titanic, aes(x=Age, fill=Survived)) +
+ geom_histogram(binwidth = 5) + 
+  facet_wrap(Sex ~ Pclass) +
+  labs(y="Age", 
+       x="Survived", 
+       title = "Titanic Survival Rates by Age, Pclass and Sex")
+dev.off()
+```
+```{r, high-res}
+# high resulation
+png("titanic_survival_high.png", 1000, 1000)
+ggplot(titanic, aes(x=Age, fill=Survived)) +
+ geom_histogram(binwidth = 5) + 
+  facet_wrap(Sex ~ Pclass) +
+  labs(y="Age", 
+       x="Survived", 
+       title = "Titanic Survival Rates by Age, Pclass and Sex")
+dev.off()
+```
+
+
+
 

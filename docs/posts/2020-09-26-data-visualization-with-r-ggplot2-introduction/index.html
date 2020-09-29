@@ -69,7 +69,7 @@
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["anatomy.png","data-visualization-with-r-ggplot2-introduction_files/bowser-1.9.3/bowser.min.js","data-visualization-with-r-ggplot2-introduction_files/distill-2.2.21/template.v2.js","data-visualization-with-r-ggplot2-introduction_files/figure-html5/bar-chart-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/bar-chart-class-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/bar-chart-color-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/bar-chart-customize-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/bar-chart-facet-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/bar-chart-proportion-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/boxplot-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/density-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/histogram-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/histogram-color-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/histogram-facet-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/histogram-fill-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/unnamed-chunk-4-1.png","data-visualization-with-r-ggplot2-introduction_files/jquery-1.11.3/jquery.min.js","data-visualization-with-r-ggplot2-introduction_files/pagedtable-1.1/css/pagedtable.css","data-visualization-with-r-ggplot2-introduction_files/pagedtable-1.1/js/pagedtable.js","data-visualization-with-r-ggplot2-introduction_files/webcomponents-2.0.0/webcomponents.js","ggplot2.png","titanic.csv"]}
+  {"type":"character","attributes":{},"value":["anatomy.png","data-visualization-with-r-ggplot2-introduction_files/bowser-1.9.3/bowser.min.js","data-visualization-with-r-ggplot2-introduction_files/distill-2.2.21/template.v2.js","data-visualization-with-r-ggplot2-introduction_files/figure-html5/bar-chart-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/bar-chart-class-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/bar-chart-color-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/bar-chart-customize-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/bar-chart-facet-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/bar-chart-proportion-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/boxplot-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/density-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/histogram-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/histogram-color-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/histogram-facet-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/histogram-fill-1.png","data-visualization-with-r-ggplot2-introduction_files/figure-html5/unnamed-chunk-4-1.png","data-visualization-with-r-ggplot2-introduction_files/jquery-1.11.3/jquery.min.js","data-visualization-with-r-ggplot2-introduction_files/pagedtable-1.1/css/pagedtable.css","data-visualization-with-r-ggplot2-introduction_files/pagedtable-1.1/js/pagedtable.js","data-visualization-with-r-ggplot2-introduction_files/webcomponents-2.0.0/webcomponents.js","ggplot2.png","titanic_survival_high.png","titanic_survival.jpeg","titanic_survival.pdf","titanic_survival.png","titanic_survival.tiff","titanic.csv"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 
@@ -1401,6 +1401,7 @@ Bioinformatics
 <li><a href="#bar-chart">Bar Chart</a></li>
 <li><a href="#histogram">Histogram</a></li>
 <li><a href="#density-plot">Density Plot</a></li>
+<li><a href="#save-figure-different-file-formats">Save Figure: Different file formats</a></li>
 </ul>
 </nav>
 <hr class="d-toc-separator"/>
@@ -1808,6 +1809,82 @@ ggplot(titanic, aes(x=Age, fill=Survived)) +
        x=&quot;Survived&quot;, 
        title = &quot;Titanic Survival Rates by Age, Pclass and Sex&quot;)</code></pre>
 <p><img src="data-visualization-with-r-ggplot2-introduction_files/figure-html5/histogram-facet-1.png" width="624" /></p>
+</div>
+<h2 id="save-figure-different-file-formats">Save Figure: Different file formats</h2>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# png 
+png(&quot;titanic_survival.png&quot;)
+ggplot(titanic, aes(x=Age, fill=Survived)) +
+ geom_histogram(binwidth = 5) + 
+  facet_wrap(Sex ~ Pclass) +
+  labs(y=&quot;Age&quot;, 
+       x=&quot;Survived&quot;, 
+       title = &quot;Titanic Survival Rates by Age, Pclass and Sex&quot;)
+dev.off()</code></pre>
+<pre><code>
+png 
+  2 </code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+#pdf 
+pdf(&quot;titanic_survival.pdf&quot;)
+ggplot(titanic, aes(x=Age, fill=Survived)) +
+ geom_histogram(binwidth = 5) + 
+  facet_wrap(Sex ~ Pclass) +
+  labs(y=&quot;Age&quot;, 
+       x=&quot;Survived&quot;, 
+       title = &quot;Titanic Survival Rates by Age, Pclass and Sex&quot;)
+dev.off()</code></pre>
+<pre><code>
+png 
+  2 </code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+#tiff 
+tiff(&quot;titanic_survival.tiff&quot;)
+ggplot(titanic, aes(x=Age, fill=Survived)) +
+ geom_histogram(binwidth = 5) + 
+  facet_wrap(Sex ~ Pclass) +
+  labs(y=&quot;Age&quot;, 
+       x=&quot;Survived&quot;, 
+       title = &quot;Titanic Survival Rates by Age, Pclass and Sex&quot;)
+dev.off()</code></pre>
+<pre><code>
+png 
+  2 </code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+#jpeg 
+jpeg(&quot;titanic_survival.jpeg&quot;)
+ggplot(titanic, aes(x=Age, fill=Survived)) +
+ geom_histogram(binwidth = 5) + 
+  facet_wrap(Sex ~ Pclass) +
+  labs(y=&quot;Age&quot;, 
+       x=&quot;Survived&quot;, 
+       title = &quot;Titanic Survival Rates by Age, Pclass and Sex&quot;)
+dev.off()</code></pre>
+<pre><code>
+png 
+  2 </code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# high resulation
+png(&quot;titanic_survival_high.png&quot;, 1000, 1000)
+ggplot(titanic, aes(x=Age, fill=Survived)) +
+ geom_histogram(binwidth = 5) + 
+  facet_wrap(Sex ~ Pclass) +
+  labs(y=&quot;Age&quot;, 
+       x=&quot;Survived&quot;, 
+       title = &quot;Titanic Survival Rates by Age, Pclass and Sex&quot;)
+dev.off()</code></pre>
+<pre><code>
+png 
+  2 </code></pre>
 </div>
 <!--radix_placeholder_article_footer-->
 <div class="article-footer">
