@@ -1,22 +1,24 @@
 ---
-title: "Data Visualization with R & ggplot2 - Introduction"
+title: "Introduction to Data Visualization with R & ggplot2"
 description: |
   Data visualization is an essential skill of any data analysts or researchers. Simply, "A picture is worth a thousand words". In this article, I'll show you the basic principles of data visualization and why it is important?
-  
-#preview: Rplot.png
+
+preview: ggplot2.png
 author:
   - name: Jubayer Hossain
     url: https://www.linkedin.com/in/jubayer28/
     affiliation_url: https://www.jhossain.me
-    bibliography: biblio.bib
 
+    citation_url: https://hossainlab.github.io/
+    slug: jubayer2020blog 
+    bibliography: biblio.bib
 date: 09-26-2020
 categories:
-  - Data Visualization 
+  - Data Visualization
 output:
   distill::distill_article:
     self_contained: false
-    toc: true 
+    toc: true
     toc_depth: 2
 draft: false
 ---
@@ -26,29 +28,24 @@ knitr::opts_chunk$set(echo = TRUE, comment = NA, message = FALSE, warning = FALS
 ```
 
 
-```{r fig.cap="Source: https://ggplot2.tidyverse.org/", out.extra="class=external", fig.align='center', fig.height= 3, fig.width=8,  echo=FALSE}
-knitr::include_graphics("ggplot2.png")
-```
-
-
-## Prerequisites 
-* To follow along you will need the following 
+## Prerequisites
+* To follow along you will need the following
   * R - https://cran.r-project.org/
   * RStudio - https://rstudio.com/products/rstudio/download/
-  
+
 If you want to work in cloud, you can use **RStudio Cloud Service ** https://rstudio.cloud/
 
-* You will need the `ggplot2` installed in your R environment. 
-* To install the `ggplot2` package just run this command in your R Console 
+* You will need the `ggplot2` installed in your R environment.
+* To install the `ggplot2` package just run this command in your R Console
 ```r
 install.packages("ggplot2")
 ```
 
-## What is ggplot2? 
+## What is ggplot2?
 **ggplot2** is a data visualization package for the statistical programming language R. Created by **Hadley Wickham** in 2005, ggplot2 is an implementation of Leland Wilkinson's Grammar of Graphics—a general scheme for data visualization which breaks up graphs into semantic components such as scales and layers.
 
 
-## Types of Visualization 
+## Types of Visualization
 In statistics, we generally have two kinds of visualization:
 
 * **Exploratory data visualization:** Exploring the data visually to find patterns among the data entities.
@@ -56,7 +53,7 @@ In statistics, we generally have two kinds of visualization:
 * **Explanatory data visualization:** Showcasing the identified patterns using simple graphs.
 
 
-## Why Visualization? 
+## Why Visualization?
 > "A picture is worth a thousand words"
 
 Data visualizations make big and small data easier for the human brain to understand, and visualization also makes it easier to detect patterns, trends, and outliers in groups of data.
@@ -72,15 +69,15 @@ Good data visualizations should place meaning into complicated datasets so that 
 |Geometry | The visual elements used for our data|
 |Facet | Groups by which we divide the data|
 
-## Anatomy of a Graph 
+## Anatomy of a Figure
 
-```{r fig.cap="Source: https://matplotlib.org/index.html", out.extra="class=external", fig.align='center', fig.height= 3, fig.width=8,  echo=FALSE}
+```{r fig.cap="Source: https://matplotlib.org/index.html", out.extra="class=external", fig.align='center', echo=FALSE}
 knitr::include_graphics("anatomy.png")
 ```
+  
 
-
-## The Data 
-R has many built-in datasets. To check the R datasets you can run `data()` command, and it will give you a lot of datasets. 
+## The Data
+R has many built-in datasets. To check the R datasets you can run `data()` command, and it will give you a lot of datasets. [@xie2015]
 
 ```{r, datasets}
 data()
@@ -88,33 +85,114 @@ data()
 In this article, I'll use the [Titanic](https://www.kaggle.com/c/titanic) dataset from [Kaggle](https://www.kaggle.com/c/titanic).
 
 ## Load `ggplot2`
-```{r, ggplot2}
+```{r, ggplot2}                      
 library(ggplot2)
 ```
 
-## Reading Data 
+## Reading Data
 ```{r, load-data}
-dataset <- read.csv("titanic.csv")
+titanic <- read.csv("titanic.csv")
 ```
 
-## Titanic Dataset 
+## Titanic Dataset
 ```{r, head, layout="l-body-outset", echo=FALSE}
 library(knitr)
-# Examine first few rows 
-kable(head(dataset), caption = "First few Rows of Titanic Dataset", )
+# Examine first few rows
+kable(head(titanic), caption = "First few Rows of Titanic Dataset", )
 ```
 
-## Data Dictionary 
+## Data Structure 
+```{r}
+# Check data structure 
+str(titanic)
+```
+
+
+## Convert Data Types 
+```{r, preprocessing}
+# Convert data into correct class
+titanic$Survived <- as.factor(titanic$Survived)
+titanic$Pclass <- as.factor(titanic$Pclass)
+titanic$Sex <- as.factor(titanic$Sex)
+titanic$Embarked <- as.factor(titanic$Embarked)
+```
+
+## Check Data Structure Again 
+```{r, data-structure}
+str(titanic)
+```
+
+
+
+## Data Dictionary
 Variable Name| Description | Variable Type
 ----------------------|-----------------------|--------------------------
 Survived | Survival | Categorical(aka; Binary), Yes=1, No = 0
-Pclass | Ticket class | Categorical, 1 = First Class, 2 = Second Class, 3 = Third Class 
-Sex | Gender | Categorical(aka; Binary), Male and Female 
+Pclass | Ticket class | Categorical, 1 = First Class, 2 = Second Class, 3 = Third Class
+Sex | Gender | Categorical(aka; Binary), Male and Female
 SibSp | # of siblings / spouses abroad the Titanic | Categirical, 1 = Yes, 0 = No
 Parch | # of parents / children abroad the Titanic | Categirical, 1 = Yes, 0 = No
 Ticket | Ticket Number | Categirical
 Fare | Passenger fare | Numeric
-Cabin | Cabin Number | Categorical 
+Cabin | Cabin Number | Categorical
 Embarked | Port of Embarkation | C = Cherbourg, Q = Queenstown, S = Sothanpton
+
+## Bar Chart 
+```{r, bar-chart}
+ggplot(titanic, aes(x = Survived))+
+  geom_bar()
+```
+### Add Title, Xlab and YLab
+```{r, bar-chart-customize}
+ggplot(titanic, aes(x = Survived))+
+  geom_bar() +
+  labs(y = "Passenger Count",
+       title = "Titanic Survival Rates") 
+```
+
+### Survival Rates by Sex 
+
+```{r, bar-chart-color}
+ggplot(titanic, aes(x = Sex, fill=Survived))+
+  geom_bar() + 
+  labs(y = "Passenger Count",
+       title = "Titanic Survival Rates by Sex") 
+```
+
+### Survival Rates by Pclass 
+```{r, bar-chart-class}
+ggplot(titanic, aes(x = Pclass, fill=Survived))+
+  geom_bar() + 
+  labs(y = "Passenger Count",
+       title = "Titanic Survival Rates by Pclass") 
+```
+
+
+### Survival Rates by Sex and Pclass 
+```{r, bar-chart-facet}
+ggplot(titanic, aes(x = Sex, fill=Survived))+
+  geom_bar() + 
+  facet_wrap(~ Pclass)+
+  labs(y = "Passenger Count",
+       title = "Titanic Survival Rates by Pclass and Sex") 
+```
+
+
+## Histogram 
+```{r, histogram}
+ggplot(titanic, aes(x=Age)) +
+  geom_histogram(binwidth = 5) +
+  labs(y="Passenger Count", 
+       title = "Titanic Age Distribution")
+```
+
+
+```{r, histogram-fill}
+ggplot(titanic, aes(x=Age, fill=Survived)) +
+  geom_histogram(binwidth = 5) +
+  labs(y="Passenger Count", 
+       title = "Titanic Survival Rates by Age")
+```
+
 
 

@@ -1,7 +1,7 @@
 [
   {
     "path": "posts/2020-09-26-data-visualization-with-r-ggplot2-introduction/",
-    "title": "Data Visualization with R & ggplot2 - Introduction",
+    "title": "Introduction to Data Visualization with R & ggplot2",
     "description": "Data visualization is an essential skill of any data analysts or researchers. Simply, \"A picture is worth a thousand words\". In this article, I'll show you the basic principles of data visualization and why it is important?",
     "author": [
       {
@@ -14,7 +14,7 @@
       "Data Visualization"
     ],
     "preview": "posts/2020-09-26-data-visualization-with-r-ggplot2-introduction/ggplot2.png",
-    "last_modified": "2020-09-26T17:50:30+06:00",
+    "last_modified": "2020-09-29T16:37:15+06:00",
     "input_file": {},
     "preview_width": 240,
     "preview_height": 278
